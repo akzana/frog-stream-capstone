@@ -124,13 +124,13 @@ __Research Task:__ find stream platform mock data from API.
 
 ### Sitemap
 
-HomePage
-|_RegisterPage
-|_LogInPage
-|_UserPage
-  |_CreatorStreamPage
-  |_UserSettingsPage
-    |_CreatorDashboardPage
+- HomePage
+- RegisterPage
+- LogInPage
+- UserPage
+- CreatorStreamPage
+- UserSettingsPage
+- CreatorDashboardPage
 
   
 
@@ -138,7 +138,7 @@ HomePage
 
   
 
-![Image of low fidelity mockup of Frog Stream](/documentation/1924988181033383_page-0001.jpg)
+![Image of low fidelity mockup of Frog Stream](./documentation/1924988181033383_page-0001.jpg)
 
   
 
