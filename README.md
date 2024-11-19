@@ -103,11 +103,13 @@ Client Libraries:
 - react-router-dom
 - flv.js
 - react-chat-widget
+- mixpanel for stream health analysis
 
 Server Libraries:
 - node.js
 - express
 - knex
+- cors
 - obs-websocket-js
 - socket.io
 - bcryptjs
@@ -118,7 +120,7 @@ Server Libraries:
 
   
 
-__Research Task:__ find stream platform mock data from API.
+__Research Task:__ find stream platform mock data from available APIs.
 
   
 
@@ -146,7 +148,7 @@ __Research Task:__ find stream platform mock data from API.
 
   
 
-Describe your data and the relationships between the data points. You can show this visually using diagrams, or write it out.
+To be updated.
 
   
 
@@ -154,7 +156,7 @@ Describe your data and the relationships between the data points. You can show t
 
   
 
-List endpoints that your server will implement, including HTTP methods, parameters, and example responses.
+To be updated.
 
   
 
@@ -162,7 +164,11 @@ List endpoints that your server will implement, including HTTP methods, paramete
 
   
 
-- Draft the Pages in JSX.
+- Draft the Pages in JSX components
+- add functionality in JS
+- Create express server enpoints
+- Connect express server with react client through cors
+- Style with Sass
 
   
 
@@ -172,4 +178,7 @@ List endpoints that your server will implement, including HTTP methods, paramete
 
 ## Future Implementations
 
-Your project will be marked based on what you committed to in the above document. Here, you can list any additional features you may complete after the MVP of your application is built, or if you have extra time before the Capstone due date.
+- Establish video-on-demand hosting with cloudinary
+- Scale Frog Stream up with AWS
+- Establish FrogStream dot TV domain
+- Add soundboard and custom emoji livestream interactions for creators and subscribers to use to interact with each other
