@@ -138,7 +138,7 @@ __Research Task:__ find stream platform mock data from API.
 
   
 
-![Image of low fidelity mockup of Frog Stream](./documentation/1924988181033383_page-0001.jpg)
+![Image of low fidelity mockup of Frog Stream](./1924988181033383_page-0001.jpg)
 
   
 
