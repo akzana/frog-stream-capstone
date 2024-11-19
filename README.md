@@ -74,7 +74,7 @@ Livestream interactions:
 - a user can read and write in the livestream chat
 - a subscriber can use personalized art and emojis in the chat
 - a user can use a creator's soundboard
-- a creator can enable and disable any 
+- a creator can enable and disable any livestream interaction for their whole audience or for individual users
 
   
 
@@ -87,17 +87,21 @@ Livestream interactions:
   
 
 List technologies that will be used in your app, including any libraries to save time or provide more functionality. Be sure to research any potential limitations.
+
 Languages:
+
 - JSX
 - Sass
 - SQL
 
 Programs:
+
 - VSCode
 - Git
 - MySQL
 
 Client Libraries:
+
 - react 
 - react-router
 - react-router-dom
@@ -106,6 +110,7 @@ Client Libraries:
 - mixpanel for stream health analysis
 
 Server Libraries:
+
 - node.js
 - express
 - knex
