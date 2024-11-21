@@ -23,7 +23,7 @@ Content Creators:
 
 - connect their OBS studio to the streaming platform
 
-- host videos-on-demand (VODs)
+- host videos-on-demand (VODs) using YT API
 
 - react to follower & subscriber chatter in the livestream chat
 
@@ -115,6 +115,7 @@ Server Libraries:
 - socket.io
 - bcryptjs
 - passport.js
+- UUIDv4
   
 
 ### APIs
@@ -183,3 +184,4 @@ To be updated.
 - Scale Frog Stream up with AWS
 - Establish FrogStream dot TV domain
 - Add soundboard and custom emoji livestream interactions for creators and subscribers to use to interact with each other
+- TOS for onboarding
