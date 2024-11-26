@@ -1,5 +1,8 @@
+@use "./styles/variables" as *;
+@use "./styles/mixins" as *;
+
 :root {
-  font-family: "Parkinsans";
+  font-family: "Parkinsans", sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
