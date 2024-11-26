@@ -16,13 +16,7 @@ $spongebob-tooth-grey: #eae8e0;
 // Font families
 
 // Heading Font
-@font-face {
-  font-family: "Parkinsans", sans-serif;
-  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Parkinsans:wght@300..800&display=swap');
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Parkinsans:wght@300..800&display=swap');
 
 // Body Font
-@font-face {
-  font-family: "Open Sans", sans-serif;
-  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&display=swap');
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Parkinsans:wght@300..800&display=swap');
