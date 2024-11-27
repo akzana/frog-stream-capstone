@@ -1,10 +1,10 @@
 import React from 'react';
 import "./HomePage.scss";
 
-export const HomePage = () => {
+export default function HomePage() {
   return (
     <div>
-      HOMEPAGE
+      HomePage
     </div>
   )
 }
