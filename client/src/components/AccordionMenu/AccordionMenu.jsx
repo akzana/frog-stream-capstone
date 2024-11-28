@@ -11,7 +11,7 @@ import "./AccordionMenu.scss";
 export default function AccordionMenu() {
   return (
     <div>
-      <Accordion>
+      {/* <Accordion>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1-content"
@@ -36,8 +36,8 @@ export default function AccordionMenu() {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
           malesuada lacus ex, sit amet blandit leo lobortis eget.
         </AccordionDetails>
-      </Accordion>
-      <Accordion defaultExpanded>
+      </Accordion> */}
+      <Accordion >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel3-content"
