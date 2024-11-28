@@ -101,6 +101,7 @@ Client Libraries:
 - react 
 - react-router
 - react-router-dom
+- @mui/material & @mui/styled-engine-sc
 - flv.js
 - react-chat-widget
 - mixpanel for stream health analysis
