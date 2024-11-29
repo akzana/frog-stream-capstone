@@ -4,7 +4,6 @@ import cors from "cors";
 import usersRoutes from "./routes/usersRoutes.js";
 
 const PORT = process.env.PORT;
-console.log(PORT);
 
 const app = express();
 
