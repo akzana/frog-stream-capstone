@@ -1,0 +1,244 @@
+[
+  {
+    "uuid": "fb1f8d49-76b9-4e2b-bf3d-64e0b9e967d0",
+    "channelName": "GamingGuru123",
+    "channelDescription": "Your daily source of gaming news and playthroughs.",
+    "followerCount": 25100,
+    "subscriberCount": 1150,
+    "linkedSocialMedia": [
+      "Twitter",
+      "Instagram",
+      "YouTube"
+    ],
+    "profilePicture": "https://picsum.photos/seed/gamingguru123/200/200"
+  },
+  {
+    "uuid": "62b0c0a2-d7c3-4fef-ae89-dadf0db566f5",
+    "channelName": "SpeedrunMaster",
+    "channelDescription": "Speedrunning the hardest games ever made!",
+    "followerCount": 142000,
+    "subscriberCount": 8900,
+    "linkedSocialMedia": [
+      "Twitter",
+      "YouTube"
+    ],
+    "profilePicture": "https://picsum.photos/seed/speedrunmaster/200/200"
+  },
+  {
+    "uuid": "7e38d704-49b1-4571-b2e5-e3438a38b0a2",
+    "channelName": "MusicBeatsLive",
+    "channelDescription": "Live DJ sets and music production tutorials.",
+    "followerCount": 64000,
+    "subscriberCount": 2300,
+    "linkedSocialMedia": [
+      "Instagram",
+      "SoundCloud"
+    ],
+    "profilePicture": "https://picsum.photos/seed/musicbeatslive/200/200"
+  },
+  {
+    "uuid": "ac5d88b9-f451-4ed7-beb6-0f5ed3d10e92",
+    "channelName": "TheTechExpert",
+    "channelDescription": "Tech reviews, unboxings, and tutorials.",
+    "followerCount": 53000,
+    "subscriberCount": 4000,
+    "linkedSocialMedia": [
+      "Twitter",
+      "YouTube"
+    ],
+    "profilePicture": "https://picsum.photos/seed/thetechexpert/200/200"
+  },
+  {
+    "uuid": "27f07971-ded6-4b18-b1b0-b9f8ed63c2b9",
+    "channelName": "CreativeCrafts",
+    "channelDescription": "Creative arts and crafts, DIY tutorials!",
+    "followerCount": 20000,
+    "subscriberCount": 850,
+    "linkedSocialMedia": [
+      "Instagram",
+      "Pinterest"
+    ],
+    "profilePicture": "https://picsum.photos/seed/creativecrafts/200/200"
+  },
+  {
+    "uuid": "d68cb356-6f94-4ff2-bb4a-c9d0b2a5fc9c",
+    "channelName": "NightmarePlays",
+    "channelDescription": "Horror game streaming and reviews.",
+    "followerCount": 85000,
+    "subscriberCount": 6000,
+    "linkedSocialMedia": [
+      "Twitter",
+      "YouTube"
+    ],
+    "profilePicture": "https://picsum.photos/seed/nightmareplays/200/200"
+  },
+  {
+    "uuid": "88b4b7c7-0b8c-4675-9a51-7e64f4a0cd8b",
+    "channelName": "FoodieStream",
+    "channelDescription": "Live cooking shows, recipes, and food reviews.",
+    "followerCount": 12000,
+    "subscriberCount": 650,
+    "linkedSocialMedia": [
+      "Instagram",
+      "Facebook"
+    ],
+    "profilePicture": "https://picsum.photos/seed/foodiestream/200/200"
+  },
+  {
+    "uuid": "9f255f5c-7422-49c1-b1ca-e2cf37872e9d",
+    "channelName": "GamerGirlXOXO",
+    "channelDescription": "FPS gameplay with a touch of humor!",
+    "followerCount": 76000,
+    "subscriberCount": 5200,
+    "linkedSocialMedia": [
+      "Instagram",
+      "Twitter"
+    ],
+    "profilePicture": "https://picsum.photos/seed/gamergirlxoxo/200/200"
+  },
+  {
+    "uuid": "0e21a429-3b8e-402d-8758-97532e900b61",
+    "channelName": "EliteSniper",
+    "channelDescription": "Competitive shooter and strategy expert.",
+    "followerCount": 134000,
+    "subscriberCount": 10200,
+    "linkedSocialMedia": [
+      "Twitter",
+      "YouTube",
+      "Discord"
+    ],
+    "profilePicture": "https://picsum.photos/seed/elitesniper/200/200"
+  },
+  {
+    "uuid": "1fb6bbd0-38cd-4511-b4d1-dbaeb84feeb7",
+    "channelName": "RetroRewind",
+    "channelDescription": "Streaming retro games from the 90s and 80s.",
+    "followerCount": 49000,
+    "subscriberCount": 2300,
+    "linkedSocialMedia": [
+      "Instagram",
+      "YouTube"
+    ],
+    "profilePicture": "https://picsum.photos/seed/retrorewind/200/200"
+  },
+  {
+    "uuid": "c219b27f-ec72-441f-bcf2-01436f0c6c81",
+    "channelName": "VeganCookingWithSophie",
+    "channelDescription": "Delicious vegan recipes and cooking tips.",
+    "followerCount": 18000,
+    "subscriberCount": 1150,
+    "linkedSocialMedia": [
+      "Instagram",
+      "Facebook"
+    ],
+    "profilePicture": "https://picsum.photos/seed/vegancookingwithsophie/200/200"
+  },
+  {
+    "uuid": "313ab8c5-4e96-45b2-a2b1-d1157b23e0b5",
+    "channelName": "AdventureVibes",
+    "channelDescription": "Outdoor adventures and travel vlogs.",
+    "followerCount": 67000,
+    "subscriberCount": 3300,
+    "linkedSocialMedia": [
+      "Instagram",
+      "YouTube"
+    ],
+    "profilePicture": "https://picsum.photos/seed/adventurevibes/200/200"
+  },
+  {
+    "uuid": "8bb8da4e-3188-4ff2-8b50-15d2d99a7476",
+    "channelName": "TheDailyGamer",
+    "channelDescription": "Casual gaming with new releases every week.",
+    "followerCount": 95000,
+    "subscriberCount": 4200,
+    "linkedSocialMedia": [
+      "Twitter",
+      "YouTube"
+    ],
+    "profilePicture": "https://picsum.photos/seed/thedailygamer/200/200"
+  },
+  {
+    "uuid": "74fce37a-c9ad-421b-b351-dc2e4f635557",
+    "channelName": "TechTalkLive",
+    "channelDescription": "Live tech discussions, reviews, and news.",
+    "followerCount": 105000,
+    "subscriberCount": 8100,
+    "linkedSocialMedia": [
+      "Twitter",
+      "LinkedIn"
+    ],
+    "profilePicture": "https://picsum.photos/seed/techtalklive/200/200"
+  },
+  {
+    "uuid": "17f254a6-9390-47d9-a4a0-e0c930bb5521",
+    "channelName": "SpeedyVibes",
+    "channelDescription": "Fast-paced gaming with friends and tournaments.",
+    "followerCount": 124000,
+    "subscriberCount": 9700,
+    "linkedSocialMedia": [
+      "Instagram",
+      "Twitter"
+    ],
+    "profilePicture": "https://picsum.photos/seed/speedyvibes/200/200"
+  },
+  {
+    "uuid": "929eaf2f-f50e-4642-94d0-50f8d51e1d5b",
+    "channelName": "FitnessFreaks",
+    "channelDescription": "Fitness coaching, health tips, and workouts.",
+    "followerCount": 15000,
+    "subscriberCount": 800,
+    "linkedSocialMedia": [
+      "Instagram",
+      "YouTube"
+    ],
+    "profilePicture": "https://picsum.photos/seed/fitnessfreaks/200/200"
+  },
+  {
+    "uuid": "c09a6729-f505-4237-8b8f-3b3d7fcdc4b7",
+    "channelName": "MemeLordX",
+    "channelDescription": "Streaming memes, viral videos, and comedy!",
+    "followerCount": 190000,
+    "subscriberCount": 15500,
+    "linkedSocialMedia": [
+      "Twitter",
+      "Instagram"
+    ],
+    "profilePicture": "https://picsum.photos/seed/memelordx/200/200"
+  },
+  {
+    "uuid": "6f29d1f4-0c4f-4dbb-b9b9-67e1db302b65",
+    "channelName": "SpaceExplorer",
+    "channelDescription": "Astronomy and space exploration content.",
+    "followerCount": 42000,
+    "subscriberCount": 2700,
+    "linkedSocialMedia": [
+      "YouTube",
+      "Twitter"
+    ],
+    "profilePicture": "https://picsum.photos/seed/spaceexplorer/200/200"
+  },
+  {
+    "uuid": "d1b338c3-69e2-4a9b-848d-890b2d416e99",
+    "channelName": "ComicConHype",
+    "channelDescription": "Live conventions, comic books, and fandoms.",
+    "followerCount": 36000,
+    "subscriberCount": 1800,
+    "linkedSocialMedia": [
+      "Twitter",
+      "Instagram"
+    ],
+    "profilePicture": "https://picsum.photos/seed/comicconhype/200/200"
+  },
+  {
+    "uuid": "2d87e7c3-d724-49b9-b222-12c7dbb79c82",
+    "channelName": "TheSciFiCorner",
+    "channelDescription": "Sci-fi movies, books, and TV show reviews.",
+    "followerCount": 75000,
+    "subscriberCount": 5400,
+    "linkedSocialMedia": [
+      "Twitter",
+      "YouTube"
+    ],
+    "profilePicture": "https://picsum.photos/seed/thescificorner/200/200"
+  }
+]

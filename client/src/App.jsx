@@ -6,19 +6,21 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header.jsx";
 import Footer from './components/Footer/Footer.jsx';
 import AccordionMenu from './components/AccordionMenu/AccordionMenu.jsx';
+import MenuDrawer from './components/MenuDrawer/MenuDrawer.jsx';
 
 
 function App() {
 
   return (
-    
-      <Router  
-        future={{
-          v7_relativeSplatPath: true,
-          }}>
+
+    <Router
+      future={{
+        v7_relativeSplatPath: true,
+      }}>
+      {/* <MenuDrawer/> */}
 
         <Header />
-        <AccordionMenu/>
+        {/* <AccordionMenu/> */}
         <Routes>
           <Route path="/*" element={<NotFoundPage />} />
           <Route path="/" element={<HomePage />} />
@@ -27,9 +29,9 @@ function App() {
 
         <Footer />
 
-      </Router>
+    </Router>
 
-    
+
   )
 }
 export default App;
