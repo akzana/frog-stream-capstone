@@ -1,4 +1,22 @@
-import e from "express";
+import express from "express";
 import "dotenv/config";
 import cors from "cors";
-import userRoutes from "./routes/userRoutes.js";
+import usersRoutes from "./routes/usersRoutes.js";
+
+const PORT = process.env.PORT;
+console.log(PORT);
+
+const app = express();
+
+app.use(cors());
+app.use(express.json());
+
+app.use("/users", usersRoutes);
+
+app.get("/", (_req, res) => {
+  res.send("backend 'homepage'. ");
+});
+
+app.listen(PORT, () => {
+  console.log("app running on port ", PORT);
+});
