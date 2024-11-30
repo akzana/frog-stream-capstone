@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import "./HomePage.scss";
 import { Link, useParams } from 'react-router-dom';
 import axios from "axios";
+import GridLayout from '../../components/GridLayout/GridLayout.jsx';
 
 
 export default function HomePage() {
@@ -13,7 +14,12 @@ export default function HomePage() {
   const getUsers = async () => {
     try {
       const response = await axios.get(`${baseUrl}/users`);
+      console.log(response);
+      
       setUsers(response.data);
+      console.log(users);
+      // console.log(users[0].channelName);
+      
       
     } catch (err) {
       console.error("error fetching users: ", err);      
@@ -24,17 +30,9 @@ export default function HomePage() {
     getUsers();
   }, [])
 
+  if (users.length === 0) {return (null)};
+
   return (
-    <div>
-      <article className="featured-creator">
-        <div className="featured-creator__container">
-          <Link to="id">
-            <img
-              className="featured-creator__img"
-              src="https://fastly.picsum.photos/id/10/2500/1667.jpg?hmac=J04WWC_ebchx3WwzbM-Z4_KC_LeLBWr5LZMaAkWkF68"
-              alt="creator" /></Link>
-        </div>
-      </article>
-    </div>
+    <GridLayout users={users}/>
   )
 }

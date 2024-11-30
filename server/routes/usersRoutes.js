@@ -17,7 +17,8 @@ router.get("/", (_req, res) => {
       channelDescription: user.channelDescription,
       followerCount: user.followerCount,
       subscriberCount: user.subscriberCount,
-      linkedSocials: user.linkedSocialMedia
+      linkedSocials: user.linkedSocialMedia,
+      profilePic: user.profilePicture
     }
   });
   res.json(userObj);
