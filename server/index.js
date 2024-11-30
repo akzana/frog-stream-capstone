@@ -2,6 +2,7 @@ import express from "express";
 import "dotenv/config";
 import cors from "cors";
 import usersRoutes from "./routes/usersRoutes.js";
+import { Server } from "socket.io";
 
 const PORT = process.env.PORT;
 
