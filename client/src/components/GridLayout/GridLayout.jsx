@@ -3,6 +3,7 @@ import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid2';
+import { Link } from 'react-router-dom';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: '#fff',
@@ -15,7 +16,7 @@ const Item = styled(Paper)(({ theme }) => ({
   }),
 }));
 
-export default function GridLayout({ users }) {
+export default function GridLayout({ users, id }) {
   const fisherYatesShuffle = (array) => {
     const clonedArray = [...array];
     for (let i = clonedArray.length - 1; i > 0; i--) {
@@ -24,7 +25,7 @@ export default function GridLayout({ users }) {
     }
     return clonedArray;
   };
-  const slicedUsers = fisherYatesShuffle(users).slice(0, 5);
+  const slicedUsers = fisherYatesShuffle(users).slice(0, 4);
   console.log(slicedUsers);
 
   return (
@@ -35,9 +36,12 @@ export default function GridLayout({ users }) {
           if (index % 3 === 0) {
             return (
 
-              <Grid size={{ xs: 6, md: 8 }}>
-                <Item>{user.channelName}</Item>
-              </Grid>
+              
+
+                <Grid size={{ xs: 6, md: 8 }}>
+                  <Link to={`stream/${id}`}><Item>{user.channelName}</Item></Link>
+                </Grid>
+              
 
             )
           }
@@ -45,23 +49,16 @@ export default function GridLayout({ users }) {
 
             return (
 
-              <Grid size={{ xs: 6, md: 4 }}>
-                <Item>{user.channelName}</Item>
-              </Grid>
+              
+
+                <Grid size={{ xs: 6, md: 4 }}>
+                  <Link to={`stream/${id}`}><Item>{user.channelName}</Item></Link>
+                </Grid>
+              
             )
           }
 
         })}
-        {/* 
-        <Grid size={{ xs: 6, md: 4 }}>
-          <Item>xs=6 md=4</Item>
-        </Grid>
-        <Grid size={{ xs: 6, md: 4 }}>
-          <Item>xs=6 md=4</Item>
-        </Grid>
-        <Grid size={{ xs: 6, md: 8 }}>
-          <Item>xs=6 md=8</Item>
-        </Grid> */}
       </Grid>
     </Box>
   );

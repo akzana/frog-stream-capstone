@@ -24,7 +24,7 @@ function App() {
         <Routes>
           <Route path="/*" element={<NotFoundPage />} />
           <Route path="/" element={<HomePage />} />
-          <Route path="stream" element={<CreatorStreamPage />} />
+          <Route path="stream/:id" element={<CreatorStreamPage />} />
         </Routes>
 
         <Footer />

@@ -24,4 +24,11 @@ router.get("/", (_req, res) => {
   res.json(userObj);
 })
 
+router.get("/:id", (req, res) => {
+  const users = fs.readFileSync(usersDetailsJSON, "utf8");
+  const parsedUsers = JSON.parse(users);
+  const foundUser = parsedUsers.find((user) => user.id === req.params.id);
+  foundUser ? res.json(foundUser) : res.status(404).json({"message": "No video with that id exists"});
+});
+
 export default router;
