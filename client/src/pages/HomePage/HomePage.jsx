@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "./HomePage.scss";
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import axios from "axios";
 import GridLayout from '../../components/GridLayout/GridLayout.jsx';
 
@@ -17,8 +17,6 @@ export default function HomePage() {
       console.log(response);
       
       setUsers(response.data);
-      console.log(users);
-      // console.log(users[0].channelName);
       
       
     } catch (err) {
@@ -26,9 +24,29 @@ export default function HomePage() {
     }
   }
 
+  const getUserById = async (id) => {
+    try {
+      const response = await axios.get(`${baseUrl}/users/${id}`)
+
+    }catch (err) {
+      console.error("error fetching user by ID: ", err);      
+    }
+  }
+
   useEffect(() => {
     getUsers();
   }, [])
+
+  useEffect(
+    () => {
+        userId ? getUserById(userId) : getUsers();
+
+        window.scroll({
+            top: 0,
+            left: 0,
+            behavior: "smooth",
+        });
+    }, [userId]);
 
   if (users.length === 0) {return (null)};
 
