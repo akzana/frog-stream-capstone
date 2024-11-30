@@ -1,0 +1,68 @@
+import * as React from 'react';
+import { styled } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid2';
+
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: '#fff',
+  ...theme.typography.body2,
+  padding: theme.spacing(1),
+  textAlign: 'center',
+  color: theme.palette.text.secondary,
+  ...theme.applyStyles('dark', {
+    backgroundColor: '#1A2027',
+  }),
+}));
+
+export default function GridLayout({ users }) {
+  const fisherYatesShuffle = (array) => {
+    const clonedArray = [...array];
+    for (let i = clonedArray.length - 1; i > 0; i--) {
+      const randomIndex = Math.floor(Math.random() * (i + 1));
+      [clonedArray[i], clonedArray[randomIndex]] = [clonedArray[randomIndex], clonedArray[i]];
+    }
+    return clonedArray;
+  };
+  const slicedUsers = fisherYatesShuffle(users).slice(0, 5);
+  console.log(slicedUsers);
+
+  return (
+    <Box sx={{ flexGrow: 1 }}>
+      <Grid container spacing={2}>
+        {slicedUsers?.map((user, index) => {
+
+          if (index % 3 === 0) {
+            return (
+
+              <Grid size={{ xs: 6, md: 8 }}>
+                <Item>{user.channelName}</Item>
+              </Grid>
+
+            )
+          }
+          else {
+
+            return (
+
+              <Grid size={{ xs: 6, md: 4 }}>
+                <Item>{user.channelName}</Item>
+              </Grid>
+            )
+          }
+
+        })}
+        {/* 
+        <Grid size={{ xs: 6, md: 4 }}>
+          <Item>xs=6 md=4</Item>
+        </Grid>
+        <Grid size={{ xs: 6, md: 4 }}>
+          <Item>xs=6 md=4</Item>
+        </Grid>
+        <Grid size={{ xs: 6, md: 8 }}>
+          <Item>xs=6 md=8</Item>
+        </Grid> */}
+      </Grid>
+    </Box>
+  );
+}
