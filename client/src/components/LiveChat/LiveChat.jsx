@@ -7,7 +7,7 @@ export default function LiveChat() {
 
   const getLiveChat = async () => {
     try {
-      const response = await axios.get(`${baseUrl}/live-chat/` ||'http://localhost:8080');
+      const response = await axios.get(`${baseUrl}/live-chat` ||'http://localhost:8080/live-chat');
       console.log(response);
 
       setLiveChat(response.data);

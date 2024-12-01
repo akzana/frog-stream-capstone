@@ -54,7 +54,8 @@ io.on('connection', async (socket) => {
       result = await db.run('INSERT INTO messages (content) VALUES (?)', msg);
     } catch (e) {
       // TODO handle the failure
-      return;
+      console.error("error storing message in database",e);
+      ;
     }
     // include the offset with the message
     io.emit('chat message', msg, result.lastID);

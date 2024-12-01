@@ -7,7 +7,7 @@ export default function Header() {
     <div className='header'>
       <nav className="header__nav">
         <Link to="/"><img className='header__logo' src={FrogIcon} alt="Frog Stream Logo" /></Link>
-        <Link to="LogInPage">Log In</Link>
+        {/* <Link to="LogInPage">Log In</Link> */}
       </nav>
     </div>
   )

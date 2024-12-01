@@ -17,17 +17,17 @@ function App() {
       future={{
         v7_relativeSplatPath: true,
       }}>
-      {/* <MenuDrawer/> */}
+
 
         <Header />
-        {/* <AccordionMenu/> */}
+
         <Routes>
           <Route path="/*" element={<NotFoundPage />} />
           <Route path="/" element={<HomePage />} />
           <Route path="stream/:id" element={<CreatorStreamPage />} />
         </Routes>
 
-        <Footer />
+
 
     </Router>
 
