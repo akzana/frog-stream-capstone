@@ -27,7 +27,7 @@ router.get("/", (_req, res) => {
 router.get("/:id", (req, res) => {
   const users = fs.readFileSync(usersDetailsJSON, "utf8");
   const parsedUsers = JSON.parse(users);
-  const foundUser = parsedUsers.find((user) => user.id === req.params.id);
+  const foundUser = parsedUsers.find((user) => user.uuid === req.params.id);
   foundUser ? res.json(foundUser) : res.status(404).json({"message": "No video with that id exists"});
 });
 

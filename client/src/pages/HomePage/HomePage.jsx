@@ -10,11 +10,11 @@ export default function HomePage() {
   const { userId } = useParams();
 
   const [users, setUsers] = useState([]);
+  const [user, setUser] = useState(null)
 
   const getUsers = async () => {
     try {
       const response = await axios.get(`${baseUrl}/users`);
-      console.log(response);
       
       setUsers(response.data);
       
@@ -27,7 +27,8 @@ export default function HomePage() {
   const getUserById = async (id) => {
     try {
       const response = await axios.get(`${baseUrl}/users/${id}`)
-
+      console.log(response.data);
+      
     }catch (err) {
       console.error("error fetching user by ID: ", err);      
     }
@@ -51,6 +52,6 @@ export default function HomePage() {
   if (users.length === 0) {return (null)};
 
   return (
-    <GridLayout users={users}/>
+    <GridLayout users={users} id={userId}/>
   )
 }

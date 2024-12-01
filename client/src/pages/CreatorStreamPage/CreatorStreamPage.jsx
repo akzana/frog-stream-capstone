@@ -4,6 +4,9 @@ import VideoPlayer from '../../components/VideoPlayer/VideoPlayer.jsx';
 
 
 export default function CreatorStreamPage() {
+  //Connect OBS
+  
+
   return (
     <div>
       <VideoPlayer src="https://www.w3schools.com/html/mov_bbb.mp4" />

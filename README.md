@@ -9,7 +9,20 @@ Frog Stream is a streaming platform owned by the creators. The platform will hos
   
 
 Frog Stream is a collectivist alternative to traditional capitalist streaming platforms. Frog Stream provides a safe space for marginalised content creators. Without worrying about revenue from advertisers, creators on Frog Stream will own an equal share in the platform and make business and policy decisions together.
-  
+
+### Initialization
+
+Client:
+
+```
+npm i && npm run dev
+```
+
+Server:
+
+```
+npm i && npm start
+```
 
 ### User Profile  
 
@@ -19,7 +32,7 @@ Content Creators:
 
 - owns an equal share in Frog Stream
 
-- collect data on channel performance on their creator dashboard
+
 
 - connect their OBS studio to the streaming platform
 
@@ -120,6 +133,7 @@ To be updated.
 
 - Draft the Pages in JSX components
 - add functionality in JS
+- connect OBS
 - Style with Sass
 
   
@@ -135,6 +149,7 @@ To be updated.
 - Establish FrogStream dot TV domain
 - Add soundboard and custom emoji livestream interactions for creators and subscribers to use to interact with each other
 - ToS & Code of Conduct for onboarding
+- Content creators can collect data on channel performance on their creator dashboard
 
 
 ### Features

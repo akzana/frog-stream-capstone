@@ -26,7 +26,6 @@ export default function GridLayout({ users, id }) {
     return clonedArray;
   };
   const slicedUsers = fisherYatesShuffle(users).slice(0, 4);
-  console.log(slicedUsers);
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -38,7 +37,7 @@ export default function GridLayout({ users, id }) {
 
               
 
-                <Grid size={{ xs: 6, md: 8 }}>
+                <Grid size={{ xs: 6, md: 8 }} key={id}>
                   <Link to={`stream/${id}`}><Item>{user.channelName}</Item></Link>
                 </Grid>
               
