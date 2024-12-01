@@ -22,14 +22,14 @@ await db.exec(`
 `);
 
 const router = express.Router();
-const server = createServer(app);
+const server = createServer(router);
 const io = new Server(server,  {
   connectionStateRecovery: {}
 });
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-router.get('/', (req, res) => {
+router.get('/', (_req, res) => {
   res.sendFile(join(__dirname, 'liveChat.html'));
 });
 

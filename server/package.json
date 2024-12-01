@@ -20,6 +20,8 @@
     "obs-websocket-js": "^5.0.6",
     "passport": "^0.7.0",
     "socket.io": "^4.8.1",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
     "uuidv4": "^6.2.13",
     "websocat": "^1.1.0",
     "ws": "^8.18.0"
