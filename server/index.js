@@ -2,8 +2,12 @@ import express from "express";
 import "dotenv/config";
 import cors from "cors";
 import usersRoutes from "./routes/usersRoutes.js";
-// import { Server } from "socket.io";
-// import OBSWebSocket from 'obs-websocket-js';
+
+import WebSocket from 'ws';
+import { Server } from 'http';
+import OBSWebSocket from 'obs-websocket-js';
+import NodeMediaServer from "node-media-server";
+
 
 const PORT = process.env.PORT;
 
@@ -20,63 +24,83 @@ app.use(express.json());
 app.use("/users", usersRoutes);
 //=======================
 
+// ===== Node Media Server RTMP ====
+const config = {
+  rtmp: {
+    port: 1935, 
+    chunk_size: 60000,
+    gop_cache: true,
+    ping: 30,
+    ping_timeout: 60,
+  },
+  http: {
+    port: 4455, 
+    allow_origin: '*',
+  },
+};
+
+const nms = new NodeMediaServer(config);
+nms.run();
+// =================================
 
 
 //====== OBS Connection ===========
-import OBSWebSocket from 'obs-websocket-js';
-const obs = new OBSWebSocket();
-const OBS_PORT = process.env.OBS_PORT || 'localhost:4455';
-const OBS_PASS = process.env.OBS_PASS || '';
 
 
-const config = {address: 'ws://localhost:4455'};
+const httpServer = new Server(app);
+const wss = new WebSocket.Server({ server: httpServer });
 
-console.log('Connecting to OBS with config:', config);
 
-obs.connect('ws://localhost:4455')
-  .then(() => {
-    console.log('Connected to OBS');
-    // return obs.send('GetVersion'); // Test an API call
-  })
-  // .then(version => {
-  //   console.log('OBS Version:', version);
-  // })
-  .catch(err => {
-    console.error('Failed to connect to OBS:', err.message || err);
-    if (err.code) console.error('Error code:', err.code);
-    if (err.description) console.error('Error description:', err.description);
+wss.on('connection', (ws) => {
+  console.log('Client connected');
+
+
+  ws.on('message', (message) => {
+    console.log('received: %s', message);
   });
 
-// Endpoint to start streaming
-app.post('/start-stream', async (req, res) => {
-  try {
-    await obs.call('StartStreaming');
-    res.send({ message: 'Streaming started' });
-  } catch (error) {
-    res.status(500).send({ error: error.message });
-  }
+
+  ws.on('close', () => {
+    console.log('Client disconnected');
+  });
 });
 
-// Endpoint to stop streaming
-app.post('/stop-stream', async (req, res) => {
-  try {
-    await obs.call('StopStreaming');
-    res.send({ message: 'Streaming stopped' });
-  } catch (error) {
-    res.status(500).send({ error: error.message });
-  }
+
+const obsWs = new OBSWebSocket();
+obsWs.connect('ws://localhost:4455') 
+  .then(() => {
+    console.log('Connected to OBS');
+
+
+    obsWs.on('sceneChanged', (data) => {
+      console.log('Scene changed:', data);
+
+      wss.clients.forEach((client) => {
+        if (client.readyState === WebSocket.OPEN) {
+          client.send(JSON.stringify(data));
+        }
+      });
+    });
+  })
+  .catch((err) => {
+    console.error('Error connecting to OBS:', err);
+  });
+
+
+app.get('/video', (req, res) => {
+  res.send(`
+    <html>
+      <body>
+        <h1>Live Stream</h1>
+        <video id="video-player" controls autoplay>
+          <source src="http://localhost:8080/live/stream.flv" type="video/flv">
+        </video>
+      </body>
+    </html>
+  `);
 });
 
-// Endpoint to set the current scene
-app.post('/set-scene', async (req, res) => {
-  const { sceneName } = req.body;
-  try {
-    await obs.call('SetCurrentProgramScene', { sceneName });
-    res.send({ message: `Scene changed to ${sceneName}` });
-  } catch (error) {
-    res.status(500).send({ error: error.message });
-  }
-});
+
 //=======================
 
 //==== Standard Set Up ========

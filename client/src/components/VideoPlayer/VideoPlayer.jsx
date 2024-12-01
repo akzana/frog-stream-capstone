@@ -1,17 +1,25 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import flvjs from 'flv.js';
 
-const VideoPlayer = ({ src, width = '640px', height = '360px', controls = true }) => {
+const VideoPlayer = () => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (flvjs.isSupported()) {
+      const flvPlayer = flvjs.createPlayer({
+        type: 'flv',
+        url: 'http://localhost:4455/live/stream.flv',
+      });
+      flvPlayer.attachMediaElement(videoRef.current);
+      flvPlayer.load();
+      flvPlayer.play();
+    }
+  }, []);
+
   return (
-    <div style={{ display: 'flex', justifyContent: 'right', alignItems: 'center' }}>
-      <video
-        width={width}
-        height={height}
-        controls={controls}
-        style={{ border: '1px solid #ccc', borderRadius: '8px' }}
-      >
-        <source src={src} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+    <div>
+      <h1>Live Stream</h1>
+      <video ref={videoRef} controls style={{ width: '100%' }} />
     </div>
   );
 };
