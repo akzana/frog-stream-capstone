@@ -103,6 +103,10 @@ app.get('/video', (req, res) => {
 
 //=======================
 
+// === Live Chat - Socket.io ==
+
+// ============================
+
 //==== Standard Set Up ========
 app.get("/", (_req, res) => {
   res.send("backend 'homepage'. ");
