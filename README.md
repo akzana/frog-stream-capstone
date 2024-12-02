@@ -142,11 +142,15 @@ Server Libraries:
 
 ## Roadmap 
 
-[x] Draft the Pages in JSX components
-[x] add functionality in JS
-[x] connect OBS
-[ ] connect socket.io *in progress*
-[ ] Style with Sass
++ [x] Draft the Pages in JSX components
+
++ [x] add functionality in JS
+
++ [x] connect OBS
+
++ [ ] connect socket.io *in progress*
+
++ [ ] Style with Sass
 
 ---
 
