@@ -1,3 +1,4 @@
 /documentation
 /node_modules
 .env
+chat.db

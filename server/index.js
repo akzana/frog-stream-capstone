@@ -7,6 +7,7 @@ import WebSocket from 'ws';
 import { Server } from 'http';
 import OBSWebSocket from 'obs-websocket-js';
 import NodeMediaServer from "node-media-server";
+// import liveChatRoutes from "./routes/liveChatRoutes.js";
 
 
 const PORT = process.env.PORT;
@@ -102,6 +103,10 @@ app.get('/video', (req, res) => {
 
 
 //=======================
+
+// === Live Chat - Socket.io ==
+// app.use("/live-chat", liveChatRoutes);
+// ============================
 
 //==== Standard Set Up ========
 app.get("/", (_req, res) => {
