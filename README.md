@@ -12,13 +12,18 @@ Frog Stream is a collectivist alternative to traditional capitalist streaming pl
 
 ### Initialization
 
-Client:
+#### Client:
 
 ```
 npm i && npm run dev
 ```
+###### Client/public
 
-Server:
+```
+npm i && npm start
+```
+
+#### Server:
 
 ```
 npm i && npm start
