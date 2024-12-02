@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+Footer/
+zz_AccordionMenu/
+zz_MenuDrawer/
