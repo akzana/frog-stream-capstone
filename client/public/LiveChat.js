@@ -1,19 +1,19 @@
-import express, { response } from 'express';
+import express from 'express';
 import { createServer } from 'node:http';
 import { fileURLToPath } from 'node:url';
-import { dirname, join } from 'node:path';
+import { dirname } from 'node:path';
 import { Server } from 'socket.io';
 import sqlite3 from 'sqlite3';
 import { open } from 'sqlite';
 import path from 'node:path';
 
-// open the database file
+
 const db = await open({
   filename: 'chat.db',
   driver: sqlite3.Database
 });
 
-// create our 'messages' table (you can ignore the 'client_offset' column for now)
+
 await db.exec(`
   CREATE TABLE IF NOT EXISTS messages (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -51,7 +51,7 @@ io.on('connection', (socket) => {
 
 io.on('connection', (socket) => {
   socket.on('chat message', (msg) => {
-    console.log(`Received message: ${msg}`); // Debug log
+    console.log(`Received message: ${msg}`);
     const item = document.createElement('li');
     item.textContent = msg;
     messages.appendChild(item);

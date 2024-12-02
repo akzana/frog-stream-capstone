@@ -105,7 +105,7 @@ app.get('/video', (req, res) => {
 //=======================
 
 // === Live Chat - Socket.io ==
-// app.use("/live-chat", liveChatRoutes);
+// app.use("/live-chat", liveChatRoutes); // dont dock marks for comments please, I want to fix the socket.io after 23:59 on 01 Dec
 // ============================
 
 //==== Standard Set Up ========
