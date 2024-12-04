@@ -3,6 +3,8 @@
 
 body {  
   font-family: "Parkinsans", sans-serif;
+  color: $spongebob-tooth-grey;
+  @include gradient(top, background-gradient-list);
   line-height: 1.5;
   font-weight: 400;
 

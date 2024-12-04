@@ -5,13 +5,23 @@ $gradient-blue-2: #3cf0e0;
 $gradient-blue-3: #63f4e0;
 
 $patrick-pink: #fed0d0;
-$patrick-pink-accent:#c26760;
+$patrick-pink-accent: #c26760;
 $patrick-green: #b2d910;
 $patrick-purple: #ab8dc0;
 
 $spongebob-yellow: #fdf460;
 $spongebob-yellow-accent: #b0ab20;
 $spongebob-tooth-grey: #eae8e0;
+
+// Gradient List
+$background-gradient-list: $gradient-blue-3 1%, $gradient-blue-2 3%, $gradient-blue-1 5%, $gradient-blue-0 15%, black 100%;
+
+@mixin gradient($direction, $list) {
+  background: -webkit-linear-gradient($direction, $background-gradient-list);
+  background: -moz-linear-gradient($direction, $background-gradient-list);
+  background: -o-linear-gradient($direction, $background-gradient-list);
+  background: linear-gradient($direction, $background-gradient-list);
+}
 
 // Font families
 
