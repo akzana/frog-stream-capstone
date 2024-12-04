@@ -14,6 +14,7 @@ const Item = styled(Paper)(({ theme, backgroundImage }) => ({
   color: "#fff",
   fontWeight: '900',
   textDecoration: "none",
+  height: " 25vh",
   // ...theme.applyStyles('dark', {
   //   backgroundColor: '#fff',
   // }),
