@@ -1,6 +1,10 @@
 @use "./styles/variables" as *;
 @use "./styles/mixins" as *;
 
+#root{
+  width: 100vw;
+}
+
 body {  
   font-family: "Parkinsans", sans-serif;
   color: $spongebob-tooth-grey;
@@ -8,6 +12,9 @@ body {
   line-height: 1.5;
   font-weight: 400;
 
+ 
   min-width: 320px;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
 }

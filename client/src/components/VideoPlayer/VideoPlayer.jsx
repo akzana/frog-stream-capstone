@@ -17,9 +17,9 @@ const VideoPlayer = () => {
   }, []);
 
   return (
-    <div>
-      <h1>Live Stream</h1>
-      <video ref={videoRef} controls style={{ width: '100%' }} />
+    <div className='video'>
+      {/* <h1>Live Stream</h1> */}
+      <video className='player' ref={videoRef} controls style={{ width: '60.625rem' }} />
     </div>
   );
 };

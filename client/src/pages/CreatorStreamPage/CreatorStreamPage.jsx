@@ -8,7 +8,7 @@ export default function CreatorStreamPage() {
   
 
   return (
-    <div className=''>
+    <div className='stream'>
       <VideoPlayer src="https://www.w3schools.com/html/mov_bbb.mp4" />
       <LiveChat />
     </div>

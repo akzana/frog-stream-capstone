@@ -53,7 +53,6 @@ npm i && npm start
 
 - view the output from OBS in the stream video
 - input a message to the live chat
-  + your message will not be visible; this is a bug 🐛
 + click the Frog Stream logo once more to return to the home page and view the next Featured Creators
 
 Thank you for testing my app!

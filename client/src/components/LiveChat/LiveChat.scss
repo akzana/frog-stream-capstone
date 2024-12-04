@@ -1,3 +1,6 @@
 @use "../../styles/variables" as *;
 @use "../../styles/mixins" as *;
 
+iframe {
+  width: 30vw;
+}
