@@ -68,7 +68,10 @@
     <input id="input" autocomplete="off" /><button>Send</button>
     <button id="toggle-btn">Disconnect</button>
   </form>
-  <script src="http://localhost:3000/socket.io/socket.io.js">
+  <script src="http://localhost:3000/socket.io/socket.io.js" ></script>
+  <script>
+    console.log("Starting SocketIO");
+    
 
     const socket = io({
       auth: {
@@ -77,11 +80,15 @@
     });
 
     const form = document.getElementById('form');
+    console.log(form);
+    
     const input = document.getElementById('input');
     const messages = document.getElementById('messages');
 
     form.addEventListener('submit', (e) => {
       e.preventDefault();
+      console.log("form submitted");
+      
       if (input.value) {
         socket.emit('chat message', input.value);
         input.value = '';
