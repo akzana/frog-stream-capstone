@@ -1,2 +1,21 @@
 @use "../../styles/variables" as *;
 @use "../../styles/mixins" as *;
+
+.header {
+  padding-bottom: 2rem;
+  &__nav {
+    
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__logo {
+    width: 70px;
+  }
+
+  &__link-container {
+    display: flex;
+    color: rgb(59, 41, 1);
+    text-decoration: none;
+  }
+}

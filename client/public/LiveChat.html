@@ -8,8 +8,11 @@
     body {
       margin: 0;
       padding-bottom: 3rem;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-family: "Open Sans", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-color: black;
+      color: #eae8e0
     }
+    
 
     #form {
       background: rgba(0, 0, 0, 0.15);
@@ -37,7 +40,7 @@
     }
 
     #form>button {
-      background: #333;
+      background: hwb(0 20% 80%);
       border: none;
       padding: 0 1rem;
       margin: 0.25rem;
@@ -54,10 +57,11 @@
 
     #messages>li {
       padding: 0.5rem 1rem;
+      background-color: #ab8dc057;
     }
 
     #messages>li:nth-child(odd) {
-      background: #efefef;
+      background: #5d72088f;
     }
   </style>
 </head>
@@ -66,7 +70,7 @@
   <ul id="messages"></ul>
   <form id="form" action="">
     <input id="input" autocomplete="off" /><button>Send</button>
-    <button id="toggle-btn">Disconnect</button>
+    <!-- <button id="toggle-btn">Disconnect</button> -->
   </form>
   <script src="http://localhost:3000/socket.io/socket.io.js" ></script>
   <script>

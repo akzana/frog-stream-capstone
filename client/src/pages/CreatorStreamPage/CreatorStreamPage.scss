@@ -1,2 +1,8 @@
 @use "../../styles/variables" as *;
 @use "../../styles/mixins" as *;
+
+.stream {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+}

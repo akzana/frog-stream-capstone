@@ -1,2 +1,7 @@
 @use "../../styles/variables" as *;
 @use "../../styles/mixins" as *;
+
+div {
+  display: flex;
+  flex-direction: column;
+}

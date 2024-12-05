@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import flvjs from 'flv.js';
 
-const VideoPlayer = () => {
+export default function VideoPlayer() {
   const videoRef = useRef(null);
 
   useEffect(() => {
@@ -17,11 +17,9 @@ const VideoPlayer = () => {
   }, []);
 
   return (
-    <div>
-      <h1>Live Stream</h1>
-      <video ref={videoRef} controls style={{ width: '100%' }} />
+    <div className='video'>
+      {/* <h1>Live Stream</h1> */}
+      <video className='player' ref={videoRef} controls style={{ width: '60.625rem' }} />
     </div>
   );
 };
-
-export default VideoPlayer;
