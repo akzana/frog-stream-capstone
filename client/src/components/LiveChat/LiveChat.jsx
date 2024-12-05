@@ -8,7 +8,7 @@ export default function LiveChat() {
       {/* <h1>Live Stream</h1> */}
       <iframe
         src="http://localhost:3000/LiveChat.html"
-        style={{ width: '100%', height: '500px', border: 'none' }}
+        style={{ width: '100%', height: '500px', border: 'none' , borderRadius: "0.75rem"}}
       />
     </div>
   )

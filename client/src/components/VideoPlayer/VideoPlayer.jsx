@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import flvjs from 'flv.js';
 
-const VideoPlayer = () => {
+export default function VideoPlayer() {
   const videoRef = useRef(null);
 
   useEffect(() => {
@@ -23,5 +23,3 @@ const VideoPlayer = () => {
     </div>
   );
 };
-
-export default VideoPlayer;
