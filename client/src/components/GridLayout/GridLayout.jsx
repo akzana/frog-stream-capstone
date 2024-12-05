@@ -14,7 +14,9 @@ const Item = styled(Paper)(({ theme, backgroundImage }) => ({
   color: "#fff",
   fontWeight: '900',
   textDecoration: "none",
-  height: " 25vh",
+  height: " 30vh",
+  backgroundSize: "cover",
+  borderRadius: "12px"
   // ...theme.applyStyles('dark', {
   //   backgroundColor: '#fff',
   // }),
@@ -30,48 +32,41 @@ export default function GridLayout({ users, id }) {
     return clonedArray;
   };
   const slicedUsers = fisherYatesShuffle(users).slice(0, 4);
-
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
         {slicedUsers?.map((user, index) => {
-
           if (index % 3 === 0) {
             return (
-
-
-
               <Grid
                 size={{ xs: 6, md: 8 }}
-                key={user.id}
-              >
-                <Link to={`stream/${id}`} >
-                  <Item backgroundImage={user.profilePic} >
-                    {user.channelName}
+                key={user.id}>
+                <Link to={`stream/${id}`}>
+                  <Item backgroundImage={user.profilePic}>
+                    <p className="feature-creator__name">
+                      {user.channelName}
+                    </p>
                   </Item>
                 </Link>
               </Grid>
-
-
             )
           }
           else {
-
             return (
-
-
               // debug here
-              <Grid size={{ xs: 6, md: 4 }}>
+              <Grid 
+                size={{ xs: 6, md: 4 }}
+                key={user.id}>
                 <Link to={`stream/${id}`}>
                   <Item backgroundImage={user.profilePic}>
-                    {user.channelName}
+                    <p className="feature-creator__name">
+                      {user.channelName}
+                    </p>
                   </Item>
                 </Link>
               </Grid>
-
             )
           }
-
         })}
       </Grid>
     </Box>

@@ -7,3 +7,11 @@
   color: $spongebob-tooth-grey;
 }
 
+.feature-creator {
+  &__name{
+    width: 20rem;
+    background-color: black;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 0.75rem;
+  }
+}

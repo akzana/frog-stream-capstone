@@ -4,7 +4,9 @@
 #root{
   width: 100vw;
 }
-
+a {
+  text-decoration: none;
+}
 body {  
   font-family: "Parkinsans", sans-serif;
   color: $spongebob-tooth-grey;
